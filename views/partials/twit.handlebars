@@ -1,0 +1,31 @@
+{{!
+  Write a handlebars partial in this file for a single twit.  This is the
+  structure of a twit:
+
+  <article class="twit">
+    <div class="twit-icon">
+      <i class="fa fa-bullhorn"></i>
+    </div>
+    <div class="twit-content">
+      <p class="twit-text">
+        TWIT TEXT GOES HERE
+      </p>
+      <p class="twit-attribution">
+        <a href="#">TWIT AUTHOR GOES HERE</a>
+      </p>
+    </div>
+  </article>
+}}
+<article class="twit">
+  <div class="twit-icon">
+    <i class="fa fa-bullhorn"></i>
+  </div>
+  <div class="twit-content">
+    <p class="twit-text">
+      {{text}}
+    </p>
+    <p class="twit-attribution">
+      <a href="#">{{author}}</a>
+    </p>
+  </div>
+</article>

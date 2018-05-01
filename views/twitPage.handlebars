@@ -1,0 +1,19 @@
+{{!
+  Write a handlebars template in this file to implement the main tweeter page,
+  as described in README.md.
+}}
+{{> header}}
+<div class="title-container">
+  <h2> You are posting on {{name}}</h2>
+</div>
+    <main class="twit-container">
+
+      {{# each twit}}
+        {{> twit}}
+      {{/each}}
+
+    </main>
+
+    {{#if showModal}}
+      {{> createTwitModal}}
+    {{/if}}
